@@ -4,7 +4,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -46,10 +49,18 @@ public class LoginTests {
 		driver.quit();
 	}
 	@Test
-	public void validLoginTest() {
-		loginPOM.sendUserName("admin");
-		loginPOM.sendPassword("admin@123");
+	public void validLoginTest() throws InterruptedException {
+		
+		WebElement register=driver.findElement(By.xpath("//i[@class='fa fa-user-o']"));
+		Actions Reg=new Actions(driver);
+		Reg.moveToElement(register).build().perform();
+		driver.findElement(By.xpath("//span[contains(text(),'LOGIN / REGISTER')]")).click();
+		
+		Thread.sleep(3000);
+		loginPOM.sendUserName("chandana4@gmail.com");
+		loginPOM.sendPassword("reva123");
 		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		Thread.sleep(3000);
+		screenShot.captureScreenShot("Login1");
 	}
 }

@@ -1,89 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27358" started-at="2018-12-18T18:16:26Z" finished-at="2018-12-18T18:16:53Z">
+  <suite name="Sample test Suite" duration-ms="42779" started-at="2019-10-23T13:38:23Z" finished-at="2019-10-23T13:39:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27358" started-at="2018-12-18T18:16:26Z" finished-at="2018-12-18T18:16:53Z">
-      <class name="com.training.regression.tests.LoginExcelTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUpBeforeClass" is-config="true" duration-ms="15" started-at="2018-12-18T23:46:26Z" finished-at="2018-12-18T23:46:26Z">
+    <test name="Sample test" duration-ms="42779" started-at="2019-10-23T13:38:23Z" finished-at="2019-10-23T13:39:06Z">
+      <class name="com.training.sanity.tests.RTTC_015">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RTTC_015@4b9e13df]" name="setUp" is-config="true" duration-ms="5198" started-at="2019-10-23T19:08:49Z" finished-at="2019-10-23T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:com.training.sanity.tests.RTTC_015@4b9e13df]" name="LoginTest" duration-ms="2014" started-at="2019-10-23T19:08:54Z" finished-at="2019-10-23T19:08:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="ProdTest()[pri:1, instance:com.training.sanity.tests.RTTC_015@4b9e13df]" name="ProdTest" duration-ms="1305" started-at="2019-10-23T19:08:56Z" depends-on-methods="com.training.sanity.tests.RTTC_015.LoginTest" finished-at="2019-10-23T19:08:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProdTest -->
+        <test-method status="PASS" signature="CreateProdTest()[pri:2, instance:com.training.sanity.tests.RTTC_015@4b9e13df]" name="CreateProdTest" duration-ms="3701" started-at="2019-10-23T19:08:58Z" depends-on-methods="com.training.sanity.tests.RTTC_015.ProdTest" finished-at="2019-10-23T19:09:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProdTest -->
+        <test-method status="PASS" signature="SearchProdTest()[pri:3, instance:com.training.sanity.tests.RTTC_015@4b9e13df]" name="SearchProdTest" duration-ms="760" started-at="2019-10-23T19:09:01Z" finished-at="2019-10-23T19:09:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchProdTest -->
+        <test-method status="PASS" signature="DeleteTest()[pri:4, instance:com.training.sanity.tests.RTTC_015@4b9e13df]" name="DeleteTest" duration-ms="1905" started-at="2019-10-23T19:09:02Z" finished-at="2019-10-23T19:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteTest -->
+      </class> <!-- com.training.sanity.tests.RTTC_015 -->
+      <class name="com.training.sanity.tests.RTTC_013">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RTTC_013@18be83e4]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-10-23T19:08:23Z" finished-at="2019-10-23T19:08:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="5796" started-at="2018-12-18T23:46:27Z" finished-at="2018-12-18T23:46:32Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RTTC_014@cb5822]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-10-23T19:08:23Z" finished-at="2019-10-23T19:08:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.RTTC_015@4b9e13df]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-10-23T19:08:23Z" finished-at="2019-10-23T19:08:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RTTC_013@18be83e4]" name="setUp" is-config="true" duration-ms="6712" started-at="2019-10-23T19:08:23Z" finished-at="2019-10-23T19:08:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="2700" started-at="2018-12-18T23:46:32Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[hello]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.training.sanity.tests.RTTC_013@18be83e4]" name="LoginTest" duration-ms="2298" started-at="2019-10-23T19:08:30Z" finished-at="2019-10-23T19:08:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="788" started-at="2018-12-18T23:46:35Z" finished-at="2018-12-18T23:46:36Z">
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="categoryTest()[pri:2, instance:com.training.sanity.tests.RTTC_013@18be83e4]" name="categoryTest" duration-ms="877" started-at="2019-10-23T19:08:32Z" depends-on-methods="com.training.sanity.tests.RTTC_013.LoginTest" finished-at="2019-10-23T19:08:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryTest -->
+        <test-method status="PASS" signature="AddcatTest()[pri:3, instance:com.training.sanity.tests.RTTC_013@18be83e4]" name="AddcatTest" duration-ms="3864" started-at="2019-10-23T19:08:33Z" finished-at="2019-10-23T19:08:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddcatTest -->
+        <test-method status="PASS" signature="deleteCatTest()[pri:4, instance:com.training.sanity.tests.RTTC_013@18be83e4]" name="deleteCatTest" duration-ms="1351" started-at="2019-10-23T19:08:37Z" depends-on-methods="com.training.sanity.tests.RTTC_013.AddcatTest" finished-at="2019-10-23T19:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCatTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RTTC_013@18be83e4]" name="tearDown" is-config="true" duration-ms="671" started-at="2019-10-23T19:09:04Z" finished-at="2019-10-23T19:09:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="4885" started-at="2018-12-18T23:46:36Z" finished-at="2018-12-18T23:46:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RTTC_014@cb5822]" name="tearDown" is-config="true" duration-ms="718" started-at="2019-10-23T19:09:05Z" finished-at="2019-10-23T19:09:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.RTTC_015@4b9e13df]" name="tearDown" is-config="true" duration-ms="799" started-at="2019-10-23T19:09:05Z" finished-at="2019-10-23T19:09:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.sanity.tests.RTTC_013 -->
+      <class name="com.training.sanity.tests.RTTC_014">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.RTTC_014@cb5822]" name="setUp" is-config="true" duration-ms="4442" started-at="2019-10-23T19:08:39Z" finished-at="2019-10-23T19:08:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="3104" started-at="2018-12-18T23:46:41Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[naveen]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testing@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="LoginTest()[pri:1, instance:com.training.sanity.tests.RTTC_014@cb5822]" name="LoginTest" duration-ms="1841" started-at="2019-10-23T19:08:43Z" finished-at="2019-10-23T19:08:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="767" started-at="2018-12-18T23:46:44Z" finished-at="2018-12-18T23:46:45Z">
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="CateTest()[pri:2, instance:com.training.sanity.tests.RTTC_014@cb5822]" name="CateTest" duration-ms="1280" started-at="2019-10-23T19:08:45Z" depends-on-methods="com.training.sanity.tests.RTTC_014.LoginTest" finished-at="2019-10-23T19:08:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="5306" started-at="2018-12-18T23:46:45Z" finished-at="2018-12-18T23:46:50Z">
+        </test-method> <!-- CateTest -->
+        <test-method status="PASS" signature="ProdTest()[pri:3, instance:com.training.sanity.tests.RTTC_014@cb5822]" name="ProdTest" duration-ms="1555" started-at="2019-10-23T19:08:46Z" finished-at="2019-10-23T19:08:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="2595" started-at="2018-12-18T23:46:50Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[delete]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[delete]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- ProdTest -->
+        <test-method status="PASS" signature="PriceTest()[pri:4, instance:com.training.sanity.tests.RTTC_014@cb5822]" name="PriceTest" duration-ms="1447" started-at="2019-10-23T19:08:48Z" depends-on-methods="com.training.sanity.tests.RTTC_014.ProdTest" finished-at="2019-10-23T19:08:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="795" started-at="2018-12-18T23:46:53Z" finished-at="2018-12-18T23:46:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.regression.tests.LoginExcelTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- PriceTest -->
+      </class> <!-- com.training.sanity.tests.RTTC_014 -->
+    </test> <!-- Sample test -->
+  </suite> <!-- Sample test Suite -->
 </testng-results>
