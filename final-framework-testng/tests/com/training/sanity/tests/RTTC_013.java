@@ -104,21 +104,6 @@ public class RTTC_013 {
 		alert1.accept();
 		screenShot.captureScreenShot("RTTC13_4");
 		
-		String msg=driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
-		System.out.print(msg);
 		
-		String expectedmsg="Success: You have modified categories!";
-		String actualmsg=driver.findElement(By.xpath("//div[@class='alert alert-success']")).getText();
-		System.out.println("actualmsg");
-		
-	/*	if(actualmsg.equals(expectedmsg)) {
-			System.out.println("correct msg");
-			driver.close();
-		}
-		else {
-			System.out.println("wrong msg");
-		*/	
-		assertEquals("Success: You have modified categories!", "Success: You have modified categories!");
-			
-	}
+}
 }
